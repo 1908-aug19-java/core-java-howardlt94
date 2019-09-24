@@ -1,0 +1,17 @@
+<p>
+  userprofile works!
+</p>
+<form>
+  <label>name:</label>
+  <input [(ngModel)] = 'user1.name' name ='user1.name'>
+  <br>
+  <label>age:</label>
+  <input type = 'number' [(ngModel)] = 'user1.age' name ='user1.age'>
+  <br>
+  <label>email:</label>
+  <input [(ngModel)] = 'user1.email' name='user1.email'>
+</form>
+
+<p>{{user1.name}}</p>
+<p>{{user1.age}}</p>
+<p>{{user1.email}}</p>

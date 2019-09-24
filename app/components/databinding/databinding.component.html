@@ -1,0 +1,36 @@
+<p>
+  databinding works!
+</p>
+<h3>One Way databinding</h3>
+<form>
+  <label>name</label>
+  <input value ='{{monster1.name}}'>
+  <br>
+  <label>age</label>
+  <input value ='{{monster1.age}}'>
+  <br>
+  <label>email</label>
+  <input value ='{{monster1.email}}'>
+</form>
+
+<p>{{monster1.name}}</p>
+<p>{{monster1.age}}</p>
+<p>{{monster1.email}}</p>
+
+<h3>Two Way databinding</h3>
+
+<form>
+  <label>name</label>
+    <input [(ngModel)]='monster2.name' name ='monster2.name'>
+    <br>
+<label>age</label>
+<input type ='number' [(ngModel)] = 'monster2.age' name='monster2.age'>
+<br>
+<label>email</label>
+<input [(ngModel)]='monster2.email' name="monster2.email">
+
+</form>
+
+<p>{{monster2.name}}</p>
+<p>{{monster2.age}}</p>
+<p>{{monster2.email}}</p>

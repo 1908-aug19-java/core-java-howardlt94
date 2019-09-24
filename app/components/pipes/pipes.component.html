@@ -1,0 +1,19 @@
+<p>
+  pipes works!
+</p>
+<div class = "container">
+<p>{{str}}=> {{str | uppercase}}</p>
+<p>{{num}}=> {{num | currency:'EUR'}}</p>
+<p>{{day}}=> {{day | date:'MM/dd/yyyy'}}</p>
+
+<h3>PiesPiping hot like kate upton</h3>
+<ol>
+  <li *ngFor ='let str of strArr'>{{str | lowercase}}</li>
+</ol>
+<ol>
+  <li *ngFor='let product of products'>{{product | convertToSpace:'o'}}</li>
+</ol>
+<ol>
+  <li *ngFor='let product of products'>{{product | convertToSpace | titlecase}}</li>
+</ol>
+</div>
