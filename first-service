@@ -1,0 +1,15 @@
+server:
+  port: 2333
+
+spring:
+  application:
+    name: first-service
+
+eureka:
+  client:
+    fetch-registry: true
+    service-url:
+      defaultZone: http://18.205.185.8:8761/eureka/
+  instance:
+    lease-expiration-duration-in-seconds: 4
+    lease-renewal-interval-in-seconds: 2
